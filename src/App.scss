@@ -1,0 +1,28 @@
+@import './index.scss';
+
+// Container
+.container{
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+// END Container
+
+
+// Adaptive
+@media screen and (max-width:1280px) {
+  .container{
+      width: 100%;
+      padding: 0 40px;
+  }
+}
+@media screen and (max-width:1024px) {}
+@media screen and (max-width:768px) {
+  .container{
+      padding: 0 20px;
+  }
+}
+@media screen and (max-width:650px) {}
+
+// END Adaptive

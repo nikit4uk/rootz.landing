@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* nulling styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  overflow-x: hidden;
+}
+body{
+  background: #EAEFF5;
+  overflow-x: hidden;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* END nulling styles */
+
+// Variables
+$WhiteColor: #fff;
+$BlackColor: #000;
+$DarkColor: #222433;
+$AccentColor: #595c9c;
+$SecondColor: #42457a;
+
+// END Variables
+
+// Mixin
+@mixin RegularTransition() {
+  transition: all ease-in-out .3s;
+}
+
+// END Mixin
+
+.btn{
+  display: block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  color: $BlackColor;
+  padding: 13px 48px;
+  border-radius: 40px;
+  background-color: $WhiteColor;
+  @include RegularTransition;
+  &:hover{
+    color: $WhiteColor;
+    background-color: $BlackColor;
+  }
+}
+

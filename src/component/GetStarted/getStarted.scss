@@ -1,0 +1,136 @@
+@import '../../index.scss';
+
+// Get Started
+
+section#getStarted{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 104px 104px 104px 80px;
+        background: $SecondColor;
+        border-radius: 20px;
+        .getStarted-left_col,
+        .getStarted-right_col{
+            width: 40%;
+        }
+        .getStarted-left_col{
+            p{
+                font-weight: 400;
+                font-size: 18px;
+                color: #1E1A20;
+                mix-blend-mode: normal;
+                opacity: 0.9;
+            }
+        }
+        .getStarted-right_col{
+            form{
+                position: relative;
+                text-align: center;
+                padding: 40px 55px;
+                background: #F7F3F4;
+                border-radius: 16px;
+                input{
+                    width: 100%;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #807C7C;
+                    padding: 12px 24px;
+                    background: $WhiteColor;
+                    border: 1px solid $WhiteColor;
+                    border-radius: 40px;
+                    margin-bottom: 16px;
+                    outline: 0;
+                    outline-offset: 0;
+                    @include RegularTransition;
+                    &:hover,
+                    &:active,
+                    &:focus{
+                        border: 1px solid $AccentColor;
+                    }
+                }
+                button{
+                    width: 100%;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 700;
+                    font-size: 13px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $WhiteColor;
+                    padding: 15px 32px;
+                    background: $AccentColor;
+                    border: 0px solid transparent;
+                    border-radius: 30px;
+                    margin-top: 16px;
+                    @include RegularTransition;
+                    &:hover{
+                      color: $AccentColor;
+                      background-color: $BlackColor;
+                    }
+                }
+                &:before,
+                &:after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+                &:before{
+                    width: 73px;
+                    height: 45px;
+                    top: -25px;
+                    right: -28px;
+                    background-image: url(../../img/GetStarted/GetStarted-vector2.svg);
+                }
+                &:after{
+                    width: 40px;
+                    height: 20px;
+                    top: 50px;
+                    right: -18px;
+                    background-image: url(../../img/GetStarted/GetStarted-vector1.svg);
+                }
+            }
+        }
+    }
+}
+
+// END Get Started
+
+
+// Adaptive
+@media screen and (max-width:1280px) {}
+@media screen and (max-width:1024px) {
+    section#getStarted{
+        .container{
+            .getStarted-right_col{
+                form{
+                    padding: 40px 24px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    section#getStarted{
+        .container{
+            padding: 42px 18px 56px;
+            .getStarted-left_col,
+            .getStarted-right_col{
+                width: 100%;
+            }
+            .getStarted-left_col{
+                padding: 0 0 55px 26px;
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:650px) {}
+  
+  // END Adaptive

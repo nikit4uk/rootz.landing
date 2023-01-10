@@ -1,0 +1,175 @@
+@import '../../index.scss';
+
+// Our Team
+
+section#ourTeam{
+    padding: 192px 0;
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .section-header{
+            width: 320px;
+            text-align: center;
+            margin-bottom: 13px;
+            p{
+                font-weight: 400;
+                font-size: 18px;
+                color: #1E1A20;
+                mix-blend-mode: normal;
+                opacity: 0.9;
+            }
+        }
+        .ourTeam{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            position: relative;
+            width: 100%;
+            img{
+                width: auto;
+                height: fit-content;
+                z-index: 2;
+                &:nth-child(2){
+                    padding-top: 104px;
+                }
+            }
+            &:before,
+            &:after{
+                content: '';
+                display: block;
+                position: absolute;
+                width: 378px;
+                height: 205px;
+                background-image: url('../../img/OurTeam/Line.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                z-index: 1;
+            }
+            &:before{
+                top: 20px;
+                left: 15%;
+                transform: rotate(10deg);
+            }
+            &:after{
+                bottom: 20px;
+                right: 13%;
+                transform: rotate(-200deg);
+            }
+        }
+    }
+}
+
+// END Our Team
+
+
+// Adaptive
+@media screen and (max-width:1280px) {
+    section#ourTeam{
+        .container{
+            .ourTeam:after{
+                right: 8%;
+            }
+        }
+    }
+}
+@media screen and (max-width:1024px) {
+    section#ourTeam{
+        .container{
+            .ourTeam:before{
+                left: 25%;
+                transform: rotate(-10deg);
+            }
+            .ourTeam:after{
+                bottom: 190px;
+                right: 28%;
+                transform: rotate(-40deg);
+            }
+            .ourTeam{
+                img:nth-child(3){
+                    margin-left: 60px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    section#ourTeam{
+        .container{
+            .ourTeam{
+                flex-direction: column;
+                &:before{
+                    top: 120px;
+                    left: 30%;
+                    transform: rotate(40deg);
+                }
+                img:nth-child(1){
+                    margin-right: auto;
+                }
+                img:nth-child(2){
+                    padding-top: 0px;
+                    margin: 40px 0 40px auto;
+                }
+                img:nth-child(3){
+                    margin-left: 0px;
+                    margin-right: auto;
+                }
+                &:after{
+                    bottom: 240px;
+                    right: 30%;
+                    transform: rotate(-80deg);
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:650px) {
+    section#ourTeam{
+        .container{
+            .ourTeam{
+                &:before{
+                    top: 80px;
+                    left: 20%;
+                    transform: rotate(30deg);
+                }
+                img:nth-child(1){
+                    width: 50%;
+                    min-width: 200px;
+                }
+                img:nth-child(2){
+                    width: 50%;
+                    min-width: 208px;
+                }
+                img:nth-child(3){
+                    width: 50%;
+                    min-width: 171px;
+                }
+                &:after{
+                    top: 390px;
+                    right: 20%;
+                    transform: rotate(-60deg);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:460px) {
+    section#ourTeam{
+        .container{
+            .ourTeam{
+                &:before{
+                    width: 234px;
+                }
+                &:after{
+                    width: 234px;
+                    top: 290px;
+                }
+            }
+        }
+    }
+}
+  
+  // END Adaptive

@@ -8,9 +8,6 @@ section#main{
               radial-gradient(178.57% 327.71% at 110.1% 3.35%, #FF605B 0%, #FFEE30 100%),
               #27D07D;
   .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     .main-left_col{
       display: flex;
       flex-direction: column;
@@ -152,6 +149,12 @@ section#main{
         }
         .main-members{
           margin-bottom: -100px;
+          .main-members__title{
+            font-size: 15px;
+          }
+          .main-members__numbs{
+            font-size: 40px;
+          }
         }
       }
     }

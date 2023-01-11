@@ -13,9 +13,9 @@ const OurTeam = () => {
                     <p>Learn more about how you can save our planet's nature.</p>
                 </div>
                 <div className='ourTeam'>
-                    <img src={Team1}/>
-                    <img src={Team2}/>
-                    <img src={Team3}/>
+                    <img src={Team1} alt='team-1'/>
+                    <img src={Team2} alt='team-2'/>
+                    <img src={Team3} alt='team-3'/>
                 </div>
             </div>
         </section>

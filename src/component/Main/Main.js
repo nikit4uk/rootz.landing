@@ -9,7 +9,7 @@ const Main = () => {
         <section id='main'>
             <div className='container'>
                 <div className='main-left_col'>
-                    <img className='title-image' src={Title}/>
+                    <img className='title-image' src={Title} alt='main-title'/>
                     <p>The scale of the challenges facing our planet can seem daunting, but we can all do something.</p>
                     <div className='search-label'>
                         <input type='text' placeholder='Find the place to help' />
@@ -17,9 +17,9 @@ const Main = () => {
                     </div>
                 </div>
                 <div className='main-right_col'>
-                    <img className='parrot-image' src={Parrot}/>
+                    <img className='parrot-image' src={Parrot} alt='parrot'/>
                     <div className='main-members'>
-                        <img src={MemberIcon} />
+                        <img src={MemberIcon} alt='member-icon'/>
                         <span>
                             <p className='main-members__title'>Members</p>
                             <p className='main-members__numbs'>29 128</p>

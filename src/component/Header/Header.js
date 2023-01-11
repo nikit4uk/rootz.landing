@@ -1,40 +1,39 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './header.scss';
-import LogoVector1 from '../../img/Logo/Vector.svg';
-import LogoVector2 from '../../img/Logo/Vector-1.svg';
-import LogoVector3 from '../../img/Logo/Vector-2.svg';
+import Logo from '../../img/Logo/Logo.svg';
 import LogoName from '../../img/Logo/Rootz.svg';
 
 const Header = () => {
+    const [ menuActive, setMenuState ] = useState(false);
+
     return (
         <header>
             <div className='container'>
                 <div className='logo'>
                     <span>
-                        <img src={LogoVector1}/>
-                        <img src={LogoVector2}/>
-                        <img src={LogoVector3}/>
+                        <img src={Logo} alt='Logo'/>
                     </span>
-                    <img src={LogoName}/>
+                    <img src={LogoName} alt='LogoName'/>
                 </div>
-                <nav className='menu'>
+                <nav className={`menu ${menuActive ? 'active' : ''}`}>
                     <ul>
                         <li className='active'>
-                            <a>Home</a>
+                            <a href='#'>Home</a>
                         </li>
                         <li>
-                            <a>Our mission</a>
+                            <a href='#'>Our mission</a>
                         </li>
                         <li>
-                            <a>Places</a>
+                            <a href='#'>Places</a>
                         </li>
                         <li>
-                            <a>Team</a>
+                            <a href='#'>Team</a>
                         </li>
                     </ul>
+                    <a className='btn mob-btn' href='#'>Apply</a>
                 </nav>
-                <a className='btn'>Apply</a>
-                <div className='mob__nav-button'>
+                <a className='btn desc-btn' href='#'>Apply</a>
+                <div className={`mob__nav-button ${menuActive ? 'opened' : ''}`} onClick={() => setMenuState((menuActive) => !menuActive)}>
                     <span></span>
                     <span></span>
                     <span></span>

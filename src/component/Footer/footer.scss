@@ -1,0 +1,59 @@
+@import '../../index.scss';
+
+// Footer
+footer{
+    padding: 96px 0 88px;
+    .container{
+        h3, h5, p, a{
+            color: #333333;
+        }
+        h3{
+            text-transform: uppercase;
+            margin-bottom: 32px;
+        }
+        h5{
+            margin-bottom: 37px;
+        }
+        p{
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+            a{
+                text-decoration: none;
+            }
+        }
+        .social{
+            display: flex;
+            gap: 16px;
+        }
+
+    }
+}
+
+// END Footer
+
+// Adaptive
+@media screen and (max-width:1280px) {}
+@media screen and (max-width:1024px) {}
+@media screen and (max-width:768px) {}
+@media screen and (max-width:650px) {
+    footer{
+        padding: 43px 0 42px;
+        .container{
+            align-items: flex-start;
+            flex-wrap: wrap;
+            .copiright{
+                width: 100%;
+                padding-bottom: 33px;
+            }
+            h3{
+                margin-bottom: 1px;
+            }
+            h5{
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+// END Adaptive

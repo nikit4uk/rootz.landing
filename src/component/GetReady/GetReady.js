@@ -8,7 +8,7 @@ const GetReady = () => {
                 <div className='getStarted-left_col'>
                     <h3>Ready to Get started?</h3>
                     <p>When pattern is mentioned in interior design, it is easy to asso- ciate it with a geometric patterned wallpaper or colourful prints on interior fabrics.</p>
-                    <a className='btn'>Contact us</a>
+                    <a className='btn' href='#'>Contact us</a>
                 </div>
                 <div className='getStarted-right_col'>
                     <details open>
